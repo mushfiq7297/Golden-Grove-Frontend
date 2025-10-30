@@ -40,7 +40,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section id="faq" className="bg-secondary/20 py-24">
+    <section id="faq" className="bg-primary/15 py-24">
       <div className="container mx-auto px-6">
         {/* Header */}
         <ScrollReveal direction="up" delay={0.1}>

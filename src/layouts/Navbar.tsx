@@ -25,16 +25,17 @@ const navigationLinks = [
 
 export default function Header() {
   return (
-    <header className="border-b px-4 md:px-8">
-      <div className="flex h-16 items-center justify-between">
+    <header className="border-b px-4 md:px-8 bg-primary/15">
+      <div className="flex h-20 items-center justify-between">
         {/* Left: Logo */}
         <Link to="/" className="flex items-center gap-1">
           <img
-            src="https://i.ibb.co.com/wZWpMkFc/Golden-Grove-Logo-2.png"
+            src="https://i.ibb.co.com/Pvfwv7rh/navbar-logo-removebg-preview.png"
             alt="Logo"
-            className="h-12 w-auto object-contain"
+            className="h-18 w-auto object-contain"
           />
         </Link>
+        
 
         {/* Center: Navigation */}
         <NavigationMenu className="hidden md:flex justify-center flex-1">

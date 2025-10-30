@@ -72,7 +72,7 @@ const CountUpNumber = ({ target, suffix }: { target: number; suffix?: string }) 
 
 const RealtimeStats = () => {
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="py-24 bg-primary/15">
       <div className="container mx-auto px-6 text-center">
         {/* Header */}
         <motion.div

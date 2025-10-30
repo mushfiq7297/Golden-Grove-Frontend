@@ -28,7 +28,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="bg-secondary/40 py-24">
+    <section className="bg-primary/15 py-24">
       <div className="container mx-auto px-6 text-center">
         {/* Header icon */}
         <ScrollReveal>

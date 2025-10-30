@@ -6,7 +6,7 @@ import { Heart } from "lucide-react"
 
 const About = () => {
   return (
-    <section className="py-24 bg-secondary/20">
+    <section className="py-24 bg-primary/15">
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-4xl text-center">
           {/* Icon */}

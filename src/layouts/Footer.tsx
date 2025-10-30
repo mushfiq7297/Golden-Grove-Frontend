@@ -16,11 +16,11 @@ const Footer = () => {
             className="hidden md:flex items-center p-1 gap-1"
           >
             <img
-              src="https://i.ibb.co.com/NdkqszCP/logo-removebg-preview.png"
+              src="https://i.ibb.co.com/Pvfwv7rh/navbar-logo-removebg-preview.png"
               alt="Site Logo"
               className="h-12 w-auto object-contain"
             />
-            <span className="text-lg font-semibold"> GreenGrove</span>
+            
           </Link>
             
           </div>

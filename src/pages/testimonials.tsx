@@ -30,7 +30,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-secondary/20 py-24">
+    <section id="testimonials" className="bg-primary/15 py-24">
       <div className="container mx-auto px-6 text-center">
         {/* Icon */}
         <motion.div
