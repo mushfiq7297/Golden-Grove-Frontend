@@ -13,8 +13,11 @@ function App() {
     <>
       <div>
         <CommonLayout>
-          <Outlet>
+          <div >
+ <Outlet>
           </Outlet>
+          </div>
+         
         </CommonLayout>
       </div>
     </>

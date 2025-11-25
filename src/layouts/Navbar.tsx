@@ -25,7 +25,7 @@ const navigationLinks = [
 
 export default function Header() {
   return (
-    <header className="border-b px-4 md:px-8 bg-primary/15">
+    <header className="border-b px-4 md:px-8 bg-primary/25">
       <div className="flex h-20 items-center justify-between">
         {/* Left: Logo */}
         <Link to="/" className="flex items-center gap-1">

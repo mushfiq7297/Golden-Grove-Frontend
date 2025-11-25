@@ -1,9 +1,8 @@
 "use client";
-
+import { easeOut, motion, useAnimation, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Leaf } from "lucide-react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
@@ -27,79 +26,125 @@ export function Hero() {
 
   const item = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: easeOut },
+    },
   };
 
   return (
     <section
       ref={ref}
       className={cn(
-        "relative flex min-h-screen items-center justify-center overflow-hidden m-auto",
-        "bg-background text-foreground"
+        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden text-center"
       )}
     >
-      {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('https://i.ibb.co.com/SpDxg00/web-background.jpg')`,
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-background/15 to-background/0" />
-      </div>
+      <div className="absolute inset-0 bg-primary/15 -z-10" />
 
       {/* Content */}
       <motion.div
         variants={container}
         initial="hidden"
         animate={controls}
-        className="container relative z-10 mx-auto px-4 py-20"
+        className="relative z-10 max-w-5xl px-4 sm:px-6"
       >
-        <motion.div variants={item} className="max-w-2xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 backdrop-blur-sm">
-            <Leaf className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-primary">
-              100% Sustainable Materials
-            </span>
-          </div>
-        </motion.div>
-
         <motion.h1
           variants={item}
-          className="mb-6 text-5xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl"
+          className="
+            mb-20 
+            text-4xl 
+            font-bold 
+            leading-tight 
+            tracking-tight 
+            text-muted/75 
+            dark:text-gray-400
+
+            sm:text-5xl 
+            md:text-6xl 
+            lg:text-7xl
+          "
         >
           Crafting a <span className="text-primary">Greener</span> Tomorrow
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mb-8 text-lg text-foreground md:text-xl"
+          className="mb-12 text-base text-muted/75   dark:text-gray-400 sm:text-lg md:text-xl"
         >
-          As Bangladesh's modern innovator in sustainable manufacturing, we
+          As Bangladesh’s modern innovator in sustainable manufacturing, we
           design beautiful, high-quality bamboo products that are both kind to
           the planet and built to last.
         </motion.p>
-
-        <motion.div variants={item} className="flex flex-wrap gap-4">
-          <Button
-            size="lg"
-            className="group hover:bg-primary/90 transition-all"
-            onClick={() => navigate("/products")}
-          >
-            Shop Collection
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
-
-          <Button
-            variant="outline"
-            size="lg"
-            className="hover:bg-primary/10 transition-all"
-            onClick={() => navigate("/about")}
-          >
-            Learn More
-          </Button>
-        </motion.div>
       </motion.div>
+
+     {/* Bottom Bar */}
+<div
+  className="
+    w-full 
+    flex 
+    flex-col 
+    items-center 
+    gap-4 
+    px-4 
+    pb-10
+
+                                           
+    relative 
+
+    /* md+ = bottom overlay */
+    md:absolute 
+    md:bottom-6 
+    md:left-0 
+    md:right-0 
+    md:flex-row 
+    md:justify-between 
+    md:px-8
+  "
+>
+  {/* Buttons */}
+  <motion.div
+    variants={item}
+    initial="hidden"
+    animate={controls}
+    className="flex flex-wrap gap-3 justify-center md:justify-start"
+  >
+    <Button
+      size="lg"
+      className="group hover:bg-primary/90 transition-all"
+      onClick={() => navigate("/products")}
+    >
+      Shop Collection
+      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+    </Button>
+
+    <Button
+      variant="outline"
+      size="lg"
+      className="hover:bg-primary/10 transition-all"
+      onClick={() => navigate("/about")}
+    >
+      Learn More
+    </Button>
+  </motion.div>
+
+  {/* Badge */}
+  <motion.div
+    variants={item}
+    initial="hidden"
+    animate={controls}
+    className="
+      inline-flex items-center gap-2 rounded-full 
+      border border-primary/70 bg-primary/20 px-4 py-2 
+      text-center md:ml-auto
+    "
+  >
+    <span className="text-sm font-bold text-muted/75">
+      100% Sustainable Materials
+    </span>
+  </motion.div>
+</div>
+
     </section>
   );
 }

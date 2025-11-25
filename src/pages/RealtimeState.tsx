@@ -81,10 +81,10 @@ const RealtimeStats = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+          <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-muted   dark:text-gray-400">
             Our Impact in Numbers
           </h2>
-          <p className="mb-12 text-muted-foreground max-w-2xl mx-auto text-base md:text-lg">
+          <p className="mb-12 text-muted/75 max-w-2xl mx-auto text-base md:text-lg   dark:text-gray-400">
             Together, we’re building a greener tomorrow through sustainable bamboo solutions.
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ const RealtimeStats = () => {
           {stats.map((stat, i) => (
             <motion.div
               key={i}
-              className="flex flex-col items-center justify-center rounded-2xl border border-border/50 bg-card/50 p-8 backdrop-blur-sm transition-all hover:shadow-[var(--shadow-soft)] hover:border-primary/40"
+              className="flex flex-col items-center justify-center rounded-2xl border border-border/50 bg-card/80 p-8 backdrop-blur-sm transition-all hover:shadow-[var(--shadow-soft)] hover:border-primary/40"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.15, duration: 0.6 }}

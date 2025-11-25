@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Twitter, Github, Dribbble } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -10,10 +10,10 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col items-center justify-center gap-4 text-center lg:flex-row lg:items-start lg:justify-between border-b border-border/60">
           {/* Logo / Brand */}
-          <div className="flex items-center justify-center gap-2 text-primary mb-6 lg:mb-0">
+          <div className="flex items-center justify-center gap-2 text-primary  lg:mb-0">
              <Link
             to="/"
-            className="hidden md:flex items-center p-1 gap-1"
+            className=" md:flex items-center p-1 gap-1"
           >
             <img
               src="https://i.ibb.co.com/Pvfwv7rh/navbar-logo-removebg-preview.png"
@@ -82,10 +82,10 @@ const Footer = () => {
 
         {/* Socials */}
         <div className="mt-12 flex flex-wrap justify-center gap-6">
-          {[Facebook, Instagram, Twitter, Github, Dribbble].map((Icon, idx) => (
+          {[Facebook, Instagram].map((Icon, idx) => (
             <a
               key={idx}
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61583232835668"
               className="text-muted-foreground hover:text-primary transition-transform hover:-translate-y-1"
             >
               <Icon className="h-6 w-6" />

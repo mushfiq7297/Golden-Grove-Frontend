@@ -33,17 +33,17 @@ const Features = () => {
         {/* Header icon */}
         <ScrollReveal>
           <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/15">
-            <Sprout className="h-8 w-8 text-primary" />
+            <Sprout className="h-8 w-8 text-primary   dark:text-gray-400" />
           </div>
         </ScrollReveal>
 
         {/* Section Header */}
         <ScrollReveal delay={0.1}>
           <div className="mb-14 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-muted   dark:text-gray-400">
               Why Choose Bamboo?
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground md:text-lg">
+            <p className="mx-auto mt-3 max-w-2xl text-base text-muted/75 md:text-lg   dark:text-gray-400">
               Bamboo is nature’s perfect material for sustainable living — strong, beautiful, and renewable.
             </p>
           </div>
