@@ -65,7 +65,7 @@ export function Hero() {
             lg:text-7xl
           "
         >
-          Crafting a <span className="text-primary">Greener</span> Tomorrow
+          Crafting a <span className="text-primary ">Greener</span> Tomorrow
         </motion.h1>
 
         <motion.p

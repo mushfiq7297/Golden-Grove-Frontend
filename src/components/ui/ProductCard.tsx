@@ -36,7 +36,7 @@ const ProductCard = ({ title, description, price, image }: ProductCardProps) => 
               <p className="text-sm text-muted-foreground line-clamp-2">
                 {description}
               </p>
-              <p className="font-semibold text-primary">Price: {price}</p>
+              <p className="hidden font-semibold text-primary">Price: {price}</p>
             </div>
           </CardContent>
         </Card>
@@ -53,7 +53,7 @@ const ProductCard = ({ title, description, price, image }: ProductCardProps) => 
 
           <p className="text-muted-foreground">{description}</p>
 
-          <p className="text-xl font-semibold">Price: {price}</p>
+          <p className="hidden text-xl font-semibold">Price: {price}</p>
         </div>
       </DialogContent>
     </Dialog>

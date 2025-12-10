@@ -5,24 +5,24 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal"
 
 const features = [
   {
-    icon: Leaf,
-    title: "100% Natural",
-    description: "Sourced from sustainable bamboo forests with zero chemicals.",
+    icon: Recycle,
+    title: "Rapidly Renewable",
+    description: "Grows back quickly, ensuring minimal environmental impact.",
   },
   {
-    icon: Recycle,
-    title: "Eco-Friendly",
-    description: "Fully biodegradable and compostable products.",
+    icon:Sparkles ,
+    title: "Low Water Usage",
+    description: "Thrives without pesticides or fertilizers.",
   },
   {
     icon: Shield,
-    title: "Durable",
-    description: "Stronger than traditional materials — built to last.",
+    title: "Naturally Durable",
+    description: "Resistant to warping, cracking, and daily wear.",
   },
   {
-    icon: Sparkles,
-    title: "Beautiful",
-    description: "Naturally elegant design that complements any lifestyle.",
+    icon: Leaf,
+    title: "Carbon Neutral",
+    description: "Helps restore balance to our ecosystem.",
   },
 ]
 
@@ -44,7 +44,9 @@ const Features = () => {
               Why Choose Bamboo?
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-base text-muted/75 md:text-lg   dark:text-gray-400">
-              Bamboo is nature’s perfect material for sustainable living — strong, beautiful, and renewable.
+              Bamboo is the ultimate eco-friendly material. Unlike trees that take decades to mature, bamboo can be harvested in just 3–5 years — without the need for replanting. It regenerates naturally, absorbs more carbon dioxide than most plants, and releases 35% more oxygen into the atmosphere.
+
+
             </p>
           </div>
         </ScrollReveal>

@@ -1,51 +1,54 @@
 import ProductCard from "./ProductCard"
 import utensilsImage from "@/assets/product_Utensil.jpg"
-import textilesImage from "@/assets/home_decor.jpg"
-import decorImage from "@/assets/Bamboo Toothbrush 1.jpg"
+import doorImage from "@/assets/BAMBOO_DOOR.jpg"
+
 import decorImage2 from "@/assets/home_decore2.jpg"
 import productBoul from "@/assets/product_bowl.jpg"
-import bambooFloor from "@/assets/bamboo_sheet.jpg"
+import choppingBoard from "@/assets/ChppingBoard.jpg"
+import FloorBlock from "@/assets/bamboo_sheet.jpg"
+
 
 
 import { ScrollReveal } from "./ScrollReveal"
 
 const products = [
   {
-    title: "Bamboo Utensil Set",
-    description: "Elegant cutlery set perfect for everyday dining.",
+    title: "Chopping board",
+    description: "Stronger than wood, kinder to the Earth, naturally stylish chopping",
     price: "$29.99",
-    image: utensilsImage,
+    image:  choppingBoard,
   },
   {
-    title: "Bamboo Fiber Textiles",
-    description: "Soft, breathable fabrics for comfort and style.",
+    title: "Tablewear ",
+    description: "Dine with peace of mind: Bamboo tableware offers a durable, non-toxic, and naturally antibacterial alternative that's good for your family and the planet",
+    price: "$29.99",
+    image:  productBoul,
+  },
+  {
+    title: "Door",
+    description: "Make a sustainable statement with Bamboo doors, a naturally strong, moisture-resistant, and stylish alternative to traditional wood",
     price: "$39.99",
-    image: textilesImage,
+    image: doorImage,
   },
   {
-    title: "Home Decor Collection",
-    description: "Beautiful pieces to enhance your living space.",
+    title: "Floorboard & Block",
+    description: "Craft your future with Bamboo Floorboard & Block, a stylish, sustainable, and ultra-durable flooring and furniture choice that's twice as hard as oak",
     price: "$49.99",
-    image: decorImage,
+    image: FloorBlock,
   },
   {
-    title: "Home Decor Collection",
-    description: "Beautiful pieces to enhance your living space.",
+    title: "Bed Mat",
+    description: "Stay cool, dry, and healthy all night with the naturally breathable, hypoallergenic, and antibacterial bamboo bed mat",
     price: "$49.99",
     image: decorImage2,
   },
   {
-    title: "Home Decor Collection",
-    description: "Beautiful pieces to enhance your living space.",
+    title: "Disposable Bamboo Products",
+    description: "Eco-friendly, durable, biodegradable, and perfect for sustainable dining at homes and events.",
     price: "$49.99",
-    image: productBoul,
+    image: utensilsImage,
   },
-  {
-    title: "Home Decor Collection",
-    description: "Beautiful pieces to enhance your living space.",
-    price: "$49.99",
-    image: bambooFloor,
-  },
+
 ]
 
 const ProductShowcase = () => {
